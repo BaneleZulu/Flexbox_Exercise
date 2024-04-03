@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Understanding Flex, CSS flex, Flexbox, Flex">
+    <meta name="description" content="This work is about understanding how flexbox work">
+    <meta name="author" content="Nihil">
+    <link rel="icon" type="image/x-icon" href="/Logo_Images/logo_1.jpeg">
+    <title>Understanding Flex</title>
+</head>
+
+<body>
+    <div class="mother_pnl">
+        <div class="img_background">
+            <img src="pac.jpg" alt="Tupac image" title="Tupac Shakur">
+        </div>
+        <div class="content_pnl">
+            <h1>Tupac Amaru Shakur <a href="https://en.wikipedia.org/wiki/Tupac_Shakur" rel="noopener"
+                    target="_blank">2Pac</a></h1>
+            <p>
+                Tupac Amaru Shakur born Lesane Parish Crooks; June 16, 1971 –
+                September 13,
+                1996, also known by his stage names 2Pac and Makaveli, was an American rapper. Considered one of the
+                most influential
+                and successful rappers of all time, he is among the best-selling music artists, having sold more
+                than 75 million
+                records worldwide. His lyrical content has been noted for addressing social injustice, violence, and the
+                marginalization
+                of African-Americans
+            </p>
+            <span>
+                While born Lesane Parish Crooks, at age one he was renamed Tupac Amaru Shakur. He was
+                named after Túpac Amaru II, a descendant of the last Incan ruler, who was executed in Peru in 1781 after
+                his failed revolt against Spanish rule. Shakur's mother Afeni Shakur explained, <q>I wanted him to
+                    have the name of revolutionary, indigenous people in the world. I wanted him to know he was part of
+                    a
+                    world culture and not just from a neighborhood.</q> Tupac's surname came from Lumumba Shakur, a
+                Sunni
+                Muslim, whom his mother married in November 1968, their marriage fell apart when it was discovered that
+                Lumumba was not Tupac's biological father.
+            </span>
+        </div>
+        <div class="info_pnl">
+            <h3>Makaveli, 2Pacalypse </h3>
+            <p><span>&dollar;75 million</span>, records sold.</p>
+            <div>
+                <q>Even a genius asks questions.</q> <br>
+                <q>Death is not the greatest loss in life. The greatest loss is what dies inside while still alive.</q>
+                <q>
+                    My mama always said if you cant find something to live for, than you best find Something worth dying
+                    for.
+                </q>
+            </div>
+        </div>
+    </div>
+    <div class="mother_pnl">
+        <div class="img_background">
+            <img src="eminem.webp" alt="Eminem image" title="Marshall Mathers">
+        </div>
+        <div class="content_pnl">
+            <h1>Marshall Bruce Mathers III <a href="https://en.wikipedia.org/wiki/Eminem" rel="noopener"
+                    target="_blank">Eminem</a>
+            </h1>
+            <p>
+                Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, is an American
+                rapper. He is
+                credited with popularizing hip hop in Middle America and is regarded as one of the greatest rappers of
+                all time. His
+                global success is regarded as having broken racial barriers for the acceptance of white rappers in
+                popular music. While
+                much of his transgressive work during the late 1990s and early 2000s made him a controversial figure, he
+                came to be a
+                representation of popular angst of the American underclass and has been cited as an influence by and
+                upon many artists
+                working in various genres.
+            </p>
+            <span>
+                Marshall Bruce Mathers III was born on October 17, 1972, in St. Joseph, Missouri, the only child of
+                Marshall Bruce
+                Mathers Jr. and Deborah Rae "Debbie" (née Nelson). He is of Scottish, Welsh, English,
+                Cherokee, German,
+                Swiss, Polish, and possibly Luxembourgish ancestry. His mother nearly died during her
+                73-hour labor with
+                him. Eminem's parents were in a band called Daddy Warbucks, playing in Ramada Inns along the
+                Dakotas&hyphen;Montana border
+                before they separated. His father abandoned his family when Eminem was a year and a half old, and he was
+                raised only by
+                his mother, Debbie, in poverty. His mother later had a son named Nathan "Nate" Kane Samara. At
+                age twelve, he
+                and his mother had moved several times and lived in several towns and cities in Missouri (including St.
+                Joseph,
+                Savannah, and Kansas City) before settling in Warren, Michigan, a suburb of Detroit. Eminem
+                frequently fought with
+                his mother, whom a social worker described as having a <q>very suspicious, almost paranoid
+                    personality</q>. He wrote
+                letters to his father, but Debbie said that they all came back marked <q>return to sender</q>.
+            </span>
+        </div>
+        <div class="info_pnl">
+            <h3>Eminem, Slim Shady, Evil</h3>
+            <p><span>&dollar;220 million</span>, records sold.</p>
+            <div>
+                <q>I am whatever you say I am; if I wasn't, then why would you say I am.</q> <br>
+                <q>Don’t do drugs, don’t have unprotected sex, don’t be violent. Leave that to me.</q>
+                <q>
+                    I don't even know how to speak up for myself, because I don't really have a father who would give me
+                    the confidence or
+                    advice. And if you're always the new kid, you never get a chance to adapt, so your confidence is
+                    just zilch.
+                </q>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    :root {
+        --color-background: rgba(61, 61, 61, 0.5);
+        --color-heading: rgba(201, 201, 201, 0.5);
+        --color-text: rgba(41, 41, 41.03);
+        --color-text_2: rgba(45, 45, 45, 0.5);
+        --color-quote: rgba(51, 51, 51, 0.5);
+    }
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .mother_pnl {
+        /*border: 2px dotted red; */
+        display: inherit;
+        padding: 10px;
+        gap: 10px;
+        width: 90%;
+
+        div {
+            /*border: 1px solid lime; */
+            padding: 5px;
+        }
+
+        h1 {
+            color: var(--color-heading);
+        }
+    }
+
+    .img_background>img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain !important;
+        width: 300px;
+        height: auto !important;
+    }
+
+    .content_pnl {
+
+        a {
+            color: var(--color-text);
+            font-size: 1rem !important;
+            text-decoration: underline !important;
+            cursor: pointer;
+        }
+
+        span {
+            text-decoration: none !important;
+            color: var(--color-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .info_pnl {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+
+        h3 {
+            color: var(--color-text);
+        }
+
+        p {
+            color: var(--color-text_2);
+            text-decoration: double;
+
+            span {
+                color: limegreen;
+                text-transform: lowercase;
+            }
+        }
+
+        div {
+            width: -moz-fit-content;
+            width: fit-content;
+            display: flex !important;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: 200px;
+            height: -moz-fit-content;
+            height: fit-content;
+
+            q {
+                color: var(--color-quote);
+                text-align: center;
+                font-size: 11px;
+                font-family: sans-serif;
+                border-bottom: 1px solid var(--color-background);
+                margin-top: 5px;
+                padding: 3px;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .mother_pnl {
+            flex-direction: column;
+        }
+
+        .info_pnl {
+            div {
+                width: 70%;
+                margin: auto !important;
+
+                q {
+                    font-size: 1.1rem;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+</style>
+
+</html>
